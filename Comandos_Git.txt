@@ -1,0 +1,120 @@
+Git config --global user.name "nome"
+Git config --global user.email "email
+Git config --global core.editor notepad++
+
+Git config user.name
+
+Git config --list (mostra todas as configurações)
+
+Entrar na pasta do projeto
+Iniciar o repositório
+Git init (inicia no Git no diretório)
+
+Git status - Repostar status do repositório
+Git add
+Gitt commit -am 'mensagem' (M- passar mensagem )
+
+Git log
+Git --decorate
+Git log --auhor="autor" 
+Git shortlog (ordem cronologica)
+Git shortlog -sn
+Git log --graph
+Git Show "rash"
+
+Git diff 
+Git diff --name-only
+
+Git checkout (reset para antes da modificação antes de add)
+Git reset HEAD "nome do arquivo" já no stage retorna como modiff 
+
+Sempre rash de um commit antes:
+Git reset soft - retorna estage
+Git reset mixed - retorna modif
+Git reset hard - desfaz tudo
+
+ Repositório Remoto Git Hub
+
+Criar SSH privada.
+Vincular SSH ao seu usuario github
+
+Ligar git local ao github
+https://help.github.com/articles/connecting-to-github-with-ssh/
+
+Git remote
+Git remote -v
+
+Enviar para diretório remoto
+Git push origin master (branch principal)
+
+Git clone (endereço do diretório peno no gitHub )
+
+Fork - pega um projeto e faz uma copia para mim. Só é feito para projetos que não são meus
+
+Branch - Ponteiro movel que leva para um commit.
+
+	- Pode moficar sem alterar o local principal (master),
+	- Facilmente desligavel,
+	- Múltiplas pessoas trabalhando,
+	- Evita conflitos.
+
+Criar branch
+Git checkout -b "nome do branch"
+
+Git branch (mostra os branchs criados, com * é o branch que esta ponteirado).
+Git chekout "nome do branch para trocar de branch
+Git branch -D "nome do branch" deleta o branch
+
+Unindo Branches.
+
+Merge
+
+
+C6 - Junta tudo, C3 com C5 com C6.
+Git merge (nome do brunch criado)
+
+
+Rebase
+	
+
+
+Git rebase "nome do branch"
+
+
+Git log --graph
+
+
+
+Extras
+.gitignore
+Usando o .gitignore que ignora que arquivos subam para o repositorio central
+
+Criar arquivo .gitignore  
+Exemplo de linhas do arquivo 
+.json   ignora todas arquivos .json
+Db.xls ignora arquivo especifico
+
+Git stash
+Git stash -  guarda um arquivo que ainda não esta pronto, não levando para o proximo brnach
+Git stash apply
+Git stash list
+Git Stash clear
+
+Alias
+
+Ex. git config --global alias.s status
+
+Versionando
+
+Ex. Git tag -a 1.0.0 -m "texto" Cria
+Git push orign master --tags Sobe
+
+Releases quando sobe para o github
+
+Git revert
+Reverte para a alteração antes de subir.
+
+Apagar Tags repositorio remoto
+Git tag -d (nome da tag)
+
+Git push orign 
