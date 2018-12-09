@@ -15,6 +15,7 @@ Git add
 Gitt commit -am 'mensagem' (M- passar mensagem )
 
 Git log
+git whatchanged -p - Mostra todas alterações
 Git --decorate
 Git log --auhor="autor" 
 Git shortlog (ordem cronologica)
@@ -57,6 +58,9 @@ Branch - Ponteiro movel que leva para um commit.
 	- Facilmente desligavel,
 	- Múltiplas pessoas trabalhando,
 	- Evita conflitos.
+	
+git fetch origin, podemos verificar todas as atualizações que foram realizadas no repositório referente ao origin.
+
 
 Criar branch
 Git checkout -b "nome do branch"
@@ -117,4 +121,22 @@ Reverte para a alteração antes de subir.
 Apagar Tags repositorio remoto
 Git tag -d (nome da tag)
 
-Git push orign 
+Git push origin
+
+git push -u origin design - indicar o caminho (track) da branch remota para a nossa branch local. 
+
+git branch -t design origin/design  - branches remotas, copiar uma delas para a máquina local
+
+git branch -r = Esta opção lista todas as branches remotas!
+
+git branch -a = Esta opção mostra todas as branches, locais e remotas!
+
+O comando git mergetool --tool-help mostra no console uma lista de programas possíveis de ser utilizados. 
+Dessa lista, pode-se escolher um, instalar no seu computador e utilizar através do comando git mergetool -t nome_do_programa.
+
+Alterar arquivo gitconfig
+criar alias
+[alias]
+  envia = !git checkout master && git pull && git checkout desenvolvimento && git rebase master && git checkout master && git merge desenvolvimento && git push
+[color]
+  diff = auto  
